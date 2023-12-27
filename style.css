@@ -1,0 +1,176 @@
+body {
+  /* Radial Gradient Background */
+  background-color: #0b3b48;
+  /* background: radial-gradient(60.25% 73.6% at 14.86% 21.69%, #136165 0.82%, #0B3B48 30.73%, #072A36 64.58%, rgba(3, 21, 33, 0.00) 100%); */
+  /* Ensure full height of the page */
+  height: 100vh;
+  margin: 0;
+  /* Add additional styles as needed */
+  color: white;
+}
+
+bgdarkcl{
+    background-color: #031521;
+}
+
+header {
+  background-color: #262626;
+}
+
+nav {
+  color: white;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: end;
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.navbar .navbar-brand img {
+  max-height: 40px; /* Adjust image height */
+  margin-right: 10px; /* Add spacing */
+}
+
+/* Center navbar items */
+.navbar .navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Adjust styles for each nav item */
+.navbar .navbar-nav .nav-item {
+  text-align: center;
+  margin: 6px;
+  font-weight: 700;
+}
+
+/* Set color for navbar items */
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+/* Set color for active navbar item */
+/* .navbar-light .navbar-nav .nav-item.active .nav-link {
+            color: #db9b1e;
+        } */
+
+/* Hover effect for navbar items */
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #db9b1e; /* Change to desired hover color */
+}
+
+/* Active link color */
+.navbar-light .navbar-nav .nav-item.active .nav-link,
+.navbar-light .navbar-nav .nav-item.show .nav-link {
+  color: #db9b1e; /* Change to desired active link color */
+}
+
+/* Style for oval Create Account button */
+.btn-oval {
+  border-radius: 50px; /* Border-radius for oval shape */
+  padding: 10px 30px; /* Adjust padding for size */
+  font-size: 18px; /* Adjust font size */
+  background-image: linear-gradient(
+    to right,
+    lightblue,
+    palegoldenrod
+  ); /* Gradient background */
+  color: #136165; /* Text color */
+}
+
+.btn-oval:hover {
+    color:#db9b1e ; /* Change to desired hover color */
+    /* Additional styles for hover */
+  }
+
+/* Dropdown menu background color */
+.navbar .navbar-nav .dropdown-menu {
+  background-color: #198086; /* Change this color to your desired dropdown background color */
+}
+
+/* Dropdown item color */
+.navbar .navbar-nav .dropdown-menu .dropdown-item {
+  color: white; /* Change this color to your desired dropdown item color */
+}
+
+/* Change only text color of dropdown items on hover */
+.dropdown-menu .dropdown-item:hover {
+    color: #db9b1e !important; /* Change this color to your desired hover color */
+    background-color: transparent !important; /* Ensure background remains transparent */
+  }
+  
+.card {
+    background-color: #072A36 !important; /* Set the background color to #072A36 */
+    /* Other card styles */
+  }
+
+
+  /* Style for columns */
+.columns {
+    display: flex;
+  }
+  
+  /* Style for individual columns */
+  .column {
+    flex: 1;
+    padding: 10px;
+    position: relative; /* Position relative for positioning the line */
+  }
+  
+  /* Vertical line style */
+  .column:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 1px; /* Adjust the width of the line */
+    background-color: grey; /* Line color */
+  }
+
+  .img-bg{
+    background: linear-gradient(rgb(87, 200, 220), rgb(248, 239, 74));
+    padding: 20px 10px;
+    border-radius: 25px;
+    width: 70px;
+    height: 75px;
+  }
+
+  .img-bg2{
+    background: linear-gradient(rgb(87, 200, 220), rgb(248, 239, 74));
+    padding: 10px 16px;
+    border-radius: 100px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .gate{
+    max-width: 85%;
+  }
+  
+
+  h1 {
+    background-image: linear-gradient(-40deg, #db9b1e 0%, #C0D4C9 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+
+
+.rounded-circle{
+    /* background: linear-gradient(rgba(37, 137, 172, 1), rgba(219, 155, 30, 1)); */
+    /* width: ; height:;  */
+    background-image: radial-gradient(circle, lightblue, palegoldenrod);
+}
+
+.offers {
+    border: 1px solid #2D6A77;
+    border-radius: 25px;
+    background: rgba(8, 45, 64, 0.66);
+    display: flex;
+    flex-direction: column;
+}
