@@ -15,6 +15,11 @@ body {
 
 header {
   background-color: #262626;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 10px 0; /* Add padding for the header content */
+  z-index: 100; /
 }
 
 nav {
@@ -216,4 +221,17 @@ nav {
   background-clip: text;
   color: transparent;
   font-weight: 700;
+}
+
+
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+.image-animation {
+  animation: moveUpDown 3.5s infinite alternate cubic-bezier(0.25, 0.1, 0.25, 0.2);
 }
